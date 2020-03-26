@@ -1,0 +1,65 @@
+{
+    "private": true,
+    "name": "@tarojsx/examples",
+    "version": "0.1.0",
+    "description": "Tarojsx examples",
+    "author": "colder",
+    "license": "MIT",
+    "keywords": [
+        "taro",
+        "taro3",
+        "library",
+        "components",
+        "examples",
+        "react",
+        "reactjs",
+        "wx",
+        "weixin",
+        "wechat",
+        "weapp",
+        "wechat-mini-program",
+        "javascript",
+        "typescript"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tarojsx/examples.git"
+    },
+    "homepage": "https://github.com/tarojsx/examples",
+    "bugs": {
+        "url": "https://github.com/tarojsx/examples/issues"
+    },
+    "scripts": {
+        "start": "taro build --type weapp --watch",
+        "build": "taro build --type weapp"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.9.0",
+        "@tarojs/components": "3.0.0-beta.1",
+        "@tarojs/react": "3.0.0-beta.1",
+        "@tarojs/runtime": "3.0.0-beta.1",
+        "@tarojs/taro": "3.0.0-beta.1",
+        "@tarojsx/ui": "^0.2.0",
+        "react": "^16.13.1",
+        "taro-ui": "^2.3.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+        "@tarojs/cli": "3.0.0-beta.1",
+        "@tarojs/mini-runner": "3.0.0-beta.1",
+        "@tarojsx/polyfill": "^0.1.1",
+        "@types/react": "^16.9.25",
+        "@types/webpack": "^4.41.8",
+        "babel-preset-taro": "3.0.0-beta.1",
+        "typescript": "^3.8.3",
+        "webpack-chain": "^6.4.0"
+    },
+    "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "printWidth": 120
+    }
+}

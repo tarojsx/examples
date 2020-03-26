@@ -1,0 +1,87 @@
+{
+	"projectname": "tarojsx-examples",
+	"description": "@tarojsx/ui @tarojsx/library 示例",
+	"compileType": "miniprogram",
+	"libVersion": "2.10.3",
+	"appid": "touristappid",
+	"miniprogramRoot": "dist/",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": false,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"packOptions": {
+		"ignore": [
+			{
+				"type": "folder",
+				"value": "node_modules"
+			}
+		]
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "UI",
+					"pathName": "ui/index"
+				},
+				{
+					"id": 0,
+					"name": "Button",
+					"pathName": "ui/Button"
+				},
+				{
+					"id": 0,
+					"name": "List",
+					"pathName": "ui/List"
+				},
+				{
+					"id": 0,
+					"name": "Library",
+					"pathName": "library/index"
+				},
+				{
+					"id": 0,
+					"name": "FixedSizeList",
+					"pathName": "library/react-window/FixedSizeList"
+				},
+				{
+					"id": 0,
+					"name": "VariableSizeList",
+					"pathName": "library/react-window/VariableSizeList"
+				}
+			]
+		}
+	}
+}
