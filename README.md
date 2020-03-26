@@ -12,7 +12,7 @@
         <img src="https://badgen.net/github/license/tarojsx/examples" alt="License" />
     </a>
     <a href="https://github.com/tarojsx/examples/blob/master/package.json">
-        <img src="https://badgen.net/github/dependents-pkg/tarojsx/examples" alt="npm downloads" />
+        <img src="https://badgen.net/github/dependents-pkg/tarojsx/examples" alt="dependents" />
     </a>
     <a href="http://makeapullrequest.com">
         <img src="https://badgen.net/badge/PRs/welcome/green" alt="PRs welcome" />
