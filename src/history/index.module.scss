@@ -1,0 +1,21 @@
+@import '~taro-ui/dist/style/variables/default.scss';
+
+.page {
+    .action {
+        &.appLaunch {
+            color: $color-brand;
+        }
+        &.navigateTo {
+            color: $color-brand-light;
+        }
+        &.redirectTo {
+            color: $color-brand-dark;
+        }
+        &.navigateBack {
+            color: $color-success;
+        }
+        &.switchTab {
+            color: $color-error;
+        }
+    }
+}

@@ -1,16 +1,14 @@
-/// <reference types="webpack" />
-/// <reference types="webpack-chain" />
+import path from 'path'
+import fs from 'fs'
+import webpack from 'webpack'
+import webpackChain from 'webpack-chain'
+import { IProjectConfig } from '@tarojs/taro/types/compile'
+import { TaroProvidePlugin } from '@tarojsx/polyfill/dist/plugins'
 
-const path = require('path')
-const fs = require('fs')
-const webpack = require('webpack')
-const webpackChain = require('webpack-chain')
-const { TaroProvidePlugin } = require('@tarojsx/polyfill/dist/plugins')
-
-const config = {
+const config: IProjectConfig = {
     projectName: 'tarojsx-examples',
     framework: 'react',
-    date: '2020-0202',
+    date: '2020-02-02',
     designWidth: 750,
     deviceRatio: {
         640: 2.34 / 2,
@@ -23,12 +21,7 @@ const config = {
         '@': path.resolve(__dirname, '..', 'src'),
     },
     mini: {
-        /**
-         * webpack config
-         * @param {webpackChain} chain
-         * @param {webpack} webpack
-         */
-        webpackChain(chain, webpack) {
+        webpackChain(chain: webpackChain, webpack: webpack.Configuration) {
             chain.plugin('taroProviderPlugin').use(TaroProvidePlugin, [['default', 'Intl']])
         },
         postcss: {
@@ -74,9 +67,9 @@ const config = {
     },
 }
 
-module.exports = function(merge) {
+export default function(merge) {
     const env = require(process.env.NODE_ENV === 'development' ? './dev' : './prod')
-    const custom = fs.existsSync(path.join(__dirname, 'custom.js')) ? require('./custom') : {}
+    const custom = fs.existsSync(path.join(__dirname, 'custom.ts')) ? require('./custom') : {}
 
     return merge({}, config, env, custom)
 }

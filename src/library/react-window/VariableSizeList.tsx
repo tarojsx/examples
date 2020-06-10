@@ -2,10 +2,13 @@ import React from 'react'
 import Taro from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { VariableSizeList } from '@tarojsx/library/dist/react-window'
+import { useNavigationBarTitle } from '@tarojsx/hooks'
 
 const rowHeights = new Array(100000).fill(true).map(() => 50 + Math.round(Math.random() * 50))
 
 export default () => {
+    useNavigationBarTitle('可变行高列表')
+
     const { windowWidth, windowHeight } = Taro.getSystemInfoSync()
 
     return (

@@ -1,12 +1,14 @@
+import { IProjectConfig } from '@tarojs/taro/types/compile'
+
 module.exports = {
     outputRoot: 'snippets/dist',
     copy: {
         patterns: (process.env.NODE_ENV === 'development'
             ? ['project.config.json']
             : [
-                  'config/dev.js',
-                  'config/index.js',
-                  'config/prod.js',
+                  'config/dev.ts',
+                  'config/index.ts',
+                  'config/prod.ts',
                   'src',
                   'babel.config.js',
                   'package.json',
@@ -18,4 +20,4 @@ module.exports = {
             to: `snippets/${from}`,
         })),
     },
-}
+} as IProjectConfig

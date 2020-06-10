@@ -2,10 +2,13 @@ import React from 'react'
 import Taro from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { Button, ListHeader, ListItem } from '@tarojsx/ui'
+import { useNavigationBarTitle } from '@tarojsx/hooks'
 
 import styles from '@/theme.module.scss'
 
 export default () => {
+    useNavigationBarTitle('按钮')
+
     return (
         <View>
             <ListHeader title="按钮类型" />

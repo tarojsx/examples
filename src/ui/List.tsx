@@ -2,6 +2,7 @@ import React from 'react'
 import Taro from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { List, ListHeader, ListItem, Avatar } from '@tarojsx/ui'
+import { useNavigationBarTitle } from '@tarojsx/hooks'
 
 import styles from '@/theme.module.scss'
 
@@ -10,6 +11,8 @@ const BrandText: React.FC<{ style?: React.CSSProperties }> = ({ style = {}, ...r
 )
 
 export default () => {
+    useNavigationBarTitle('列表')
+
     return (
         <View>
             <List>

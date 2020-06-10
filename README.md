@@ -22,7 +22,7 @@
 <div align="center">
     Built with :purple_heart: by
     <a href="https://github.com/cncolder">@Colder</a> and
-    <a href="https://github.com/tarojsx/ui/graphs/contributors">
+    <a href="https://github.com/tarojsx/examples/graphs/contributors">
         Contributors
     </a>
     <div align="center">
@@ -34,7 +34,7 @@
 
 ## 使用
 
-### [微信开发者工具代码片段](https://developers.weixin.qq.com/s/AXhQW8mS7Cg3)
+### [<img src="images/wechatdevtools-logo@2x.png" alt="wechatdevtools" width="64" /> 微信开发者工具代码片段](https://developers.weixin.qq.com/s/VR6fY0mb72iS)
 
 ## 支持
 

@@ -58,12 +58,12 @@
 				},
 				{
 					"id": 0,
-					"name": "Button",
+					"name": "UI:Button",
 					"pathName": "ui/Button"
 				},
 				{
 					"id": 0,
-					"name": "List",
+					"name": "UI:List",
 					"pathName": "ui/List"
 				},
 				{
@@ -73,13 +73,48 @@
 				},
 				{
 					"id": 0,
-					"name": "FixedSizeList",
+					"name": "Library:FixedSizeList",
 					"pathName": "library/react-window/FixedSizeList"
 				},
 				{
 					"id": 0,
-					"name": "VariableSizeList",
+					"name": "Library:VariableSizeList",
 					"pathName": "library/react-window/VariableSizeList"
+				},
+				{
+					"id": 0,
+					"name": "Hooks",
+					"pathName": "hooks/index"
+				},
+				{
+					"id": 0,
+					"name": "Hooks:useRouterParams",
+					"pathName": "hooks/useRouterParams"
+				},
+				{
+					"id": 0,
+					"name": "Hooks:useNavigationBar",
+					"pathName": "hooks/useNavigationBar"
+				},
+				{
+					"id": 0,
+					"name": "Hooks:usePullDownRefreshing",
+					"pathName": "hooks/usePullDownRefreshing"
+				},
+				{
+					"id": 0,
+					"name": "Hooks:useDidShowAgain",
+					"pathName": "hooks/useDidShowAgain"
+				},
+				{
+					"id": 0,
+					"name": "Hooks:useLogger",
+					"pathName": "hooks/useLogger"
+				},
+				{
+					"id": 0,
+					"name": "History",
+					"pathName": "history/index"
 				}
 			]
 		}

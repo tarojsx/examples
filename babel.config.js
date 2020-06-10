@@ -10,5 +10,23 @@ module.exports = {
             },
         ],
     ],
-    plugins: ['@babel/plugin-proposal-optional-chaining'],
+    plugins: [
+        '@babel/plugin-proposal-optional-chaining',
+        ['import', { libraryName: 'lodash', libraryDirectory: '', camel2DashComponentName: false }, 'import lodash'],
+        [
+            'import',
+            { libraryName: 'react-use', libraryDirectory: 'esm', camel2DashComponentName: false },
+            'import react-use',
+        ],
+        [
+            'import',
+            {
+                libraryName: '@tarojsx/ui',
+                libraryDirectory: 'dist',
+                camel2DashComponentName: false,
+                transformToDefaultImport: false,
+            },
+            'import @tarojsx/ui',
+        ],
+    ],
 }

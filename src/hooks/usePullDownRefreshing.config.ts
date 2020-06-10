@@ -1,5 +1,5 @@
 import { PageConfig } from '@tarojs/taro'
 
 export default {
-    navigationBarTitleText: 'UI',
+    enablePullDownRefresh: true,
 } as PageConfig

@@ -2,8 +2,11 @@ import React from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
 import { List, ListHeader, ListItem } from '@tarojsx/ui'
+import { useNavigationBarTitle } from '@tarojsx/hooks'
 
 export default () => {
+    useNavigationBarTitle('Library')
+
     return (
         <View>
             <List>
@@ -14,7 +17,7 @@ export default () => {
                     arrow="right"
                     onClick={() => Taro.navigateTo({ url: 'react-window/FixedSizeList' })}
                 >
-                    固定高度虚拟滚动列表
+                    固定行高虚拟列表
                 </ListItem>
                 <ListItem
                     title="VariableSizeList"
@@ -22,7 +25,7 @@ export default () => {
                     arrow="right"
                     onClick={() => Taro.navigateTo({ url: 'react-window/VariableSizeList' })}
                 >
-                    可变高度虚拟滚动列表
+                    可变行高虚拟列表
                 </ListItem>
             </List>
         </View>
