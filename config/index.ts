@@ -2,6 +2,7 @@ import path from 'path'
 import fs from 'fs'
 import webpack from 'webpack'
 import webpackChain from 'webpack-chain'
+import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import { IProjectConfig } from '@tarojs/taro/types/compile'
 import { TaroProvidePlugin } from '@tarojsx/polyfill/dist/plugins'
 
@@ -20,9 +21,11 @@ const config: IProjectConfig = {
     alias: {
         '@': path.resolve(__dirname, '..', 'src'),
     },
+    plugins: [path.resolve(__dirname, '../plugin.js')],
     mini: {
         webpackChain(chain: webpackChain, webpack: webpack.Configuration) {
-            chain.plugin('taroProviderPlugin').use(TaroProvidePlugin, [['default', 'Intl']])
+            // chain.plugin('taroProviderPlugin').use(TaroProvidePlugin, [['default', 'Intl']])
+            // chain.plugin('optimizeCssAssetsPlugin').use(OptimizeCssAssetsPlugin, [{ assetNameRegExp: /\.wxss$/g }])
         },
         postcss: {
             autoprefixer: {
@@ -46,6 +49,9 @@ const config: IProjectConfig = {
                     generateScopedName: '[name]__[local]___[hash:base64:5]',
                 },
             },
+        },
+        miniCssExtractPluginOption: {
+            ignoreOrder: true,
         },
     },
     h5: {
